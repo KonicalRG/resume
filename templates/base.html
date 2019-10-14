@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> {% block title %} Base {% endblock %} </title>
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="{% static 'css/default.css' %}">
+    <link rel="stylesheet" href="{% static 'css/layout.css' %}">
+    <link rel="stylesheet" href="{% static 'css/media-queries.css' %}">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+
+    <!-- Script
+  ================================================== -->
+    <script src="{% static 'js/modernizr.js' %}"></script>
+
+    <!-- Favicons
+   ================================================== -->
+    <link rel="shortcut icon" href="{% static 'favicon.png' %}" type="image/x-icon">
+
+</head>
+
+<body>
+    {% include 'partials/_header.html' %}
+    {%  block body  %}
+
+    {% endblock %}
+    {% include 'partials/_footer.html' %}
+</body>
+
+</html>
