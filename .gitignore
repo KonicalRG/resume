@@ -2,3 +2,6 @@
 db.sqlite3
 static/
 ceevee/
+migrations/
+__pycache__
+*.pyc
