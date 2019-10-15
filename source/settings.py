@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.humanize',
     'resume',
     'contactform',
+    'projects',
 ]
 
 MIDDLEWARE = [

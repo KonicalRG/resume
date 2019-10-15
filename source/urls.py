@@ -23,4 +23,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # path('', include('resume.urls')),
     path('', include('contactform.urls')),
+    path('projects', include('projects.urls')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
