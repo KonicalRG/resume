@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.humanize',
-    'resume',
     'contactform',
     'projects',
 ]
@@ -79,8 +78,13 @@ WSGI_APPLICATION = 'source.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'resume',
+        'USER': 'rgeronimo',
+        'PASSWORD': 'djangorocks',
+        'HOST': 'localhost',
+        'PORT': '',
+
     }
 }
 
@@ -127,4 +131,4 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static")
 ]
 
-STATIC_ROOT = os.path.join(BASE_DIR, "static_collect")
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
