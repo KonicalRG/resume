@@ -2,6 +2,7 @@
 db.sqlite3
 static/
 ceevee/
+media/
 migrations/
 __pycache__
 .pyc
