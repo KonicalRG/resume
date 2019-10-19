@@ -4,6 +4,6 @@ static/
 ceevee/
 media/
 migrations/
-__pycache__
+*__pycache__/
 .pyc
 *.cpython-37
