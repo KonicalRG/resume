@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{%  block body  %}
+<section id="portfolio">
+
+    <div class="row">
+        <h1>Check Out Some of My Works.</h1>
+        {% for project in projects  %}
+        <div class="twelve columns collapsed">
+            <!-- portfolio-wrapper -->
+            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+
+                <div class="columns portfolio-item">
+                    <div class="item-wrap">
+
+                        <a href="{% url 'portafoliodetail' pk=portafolio.pk %}" title="">
+                            <img alt="" src="{{ project.wrapper_img.url }}">
+                            <div class="overlay">
+                                <div class="portfolio-item-meta">
+                                    <h5>Coffee</h5>
+                                    <p>Illustrration</p>
+                                </div>
+                            </div>
+                            <div class="link-icon"><i class="icon-plus"></i></div>
+                        </a>
+
+                    </div>
+                </div> <!-- item end -->
+
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}
