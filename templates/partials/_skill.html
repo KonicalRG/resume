@@ -3,29 +3,23 @@
 <div class="row skill">
 
     <div class="three columns header-col">
-        <h1><span>Skills</span></h1>
+        <h1><span>Habilidades</span></h1>
     </div>
 
     <div class="nine columns main-col">
 
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-            aperiam,
-            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
-            ipsam
-            voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
-            ratione
-            voluptatem sequi nesciunt.
+        <p>Poseo un conunto de habilidades en diferentes areas de la electronica y la tecnoligia de la informacion que
+            estoy seguro seran de gran utilidad para su organizacion.
         </p>
 
         <div class="bars">
 
             <ul class="skills">
-                <li><span class="bar-expand skill1"></span><em>Photoshop</em></li>
-                <li><span class="bar-expand skill2"></span><em>Illustrator</em></li>
-                <li><span class="bar-expand skill3"></span><em>Wordpress</em></li>
-                <li><span class="bar-expand skill4"></span><em>CSS</em></li>
-                <li><span class="bar-expand skill5"></span><em>HTML5</em></li>
-                <li><span class="bar-expand skill6"></span><em>jQuery</em></li>
+                {% for key, value in skills.items %}
+                <li><span class="bar-expand {{ key }}"></span><em>{{ value }}</em></li>
+                {% endfor %}
+
+
             </ul>
 
         </div><!-- end skill-bars -->

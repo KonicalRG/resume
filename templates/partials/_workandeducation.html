@@ -2,7 +2,8 @@
 <div class="row work">
 
     <div class="three columns header-col">
-        <h1><span>Work</span></h1>
+        <br>
+        <h1><span>Historial Empleos</span></h1>
     </div>
 
     {% for history in resume %}
@@ -14,7 +15,7 @@
             <div class="twelve columns">
 
                 <h3>{{ history.title }}</h3>
-                <p class="info">{{ history.title }}<span>&bull;</span> <em class="date">{{ history.start_date }} -
+                <p class="info">{{ history.role }}<span>&bull;</span> <em class="date">{{ history.start_date }} -
                         {{ history.end_date }}</em></p>
 
                 <p>
@@ -37,7 +38,10 @@
 <div class="row education">
 
     <div class="three columns header-col">
-        <h1><span>Education</span></h1>
+        <br>
+        <h1><span>Formacion </span></h1>
+        <h1><span>Academica</span></h1>
+
     </div>
     {% for education in academic  %}
 

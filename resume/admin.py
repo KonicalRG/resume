@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import EmploymentHistory, AcademicTraining
+from .models import EmploymentHistory, AcademicTraining, Contact
 
 
 class EmploymentHistoryAdmin(admin.ModelAdmin):
@@ -17,6 +17,6 @@ class AcadamicTraniningAdmin(admin.ModelAdmin):
     search_fields = ('title', 'college', 'date')
     ordering = ('title', 'college', 'date')
 
-
 admin.site.register(EmploymentHistory, EmploymentHistoryAdmin)
 admin.site.register(AcademicTraining, AcadamicTraniningAdmin)
+admin.site.register(Contact)
