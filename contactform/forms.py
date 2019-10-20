@@ -17,9 +17,9 @@ class ContactForm(forms.ModelForm):
                                              'placeholder': 'your matter goes  Here'}),
 
             'message': forms.Textarea(attrs={'row': 35, 'col': 50,
-                                             'id': 'contactName',
+                                             'id': 'contactMessage',
                                              'label': 'Message',
-                                             'placeholder': 'your Messae in Here'}),
+                                             'placeholder': 'your Message in Here'}),
 
             'email': forms.EmailInput(attrs={'id': "contactEmail",
                                              'size': "35", 'label': 'Email',

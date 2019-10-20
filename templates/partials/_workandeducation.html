@@ -45,13 +45,13 @@
         <h1><span>Academica</span></h1>
 
     </div>
-    {% for education in academic  %}
+
 
 
     <div class="nine columns main-col">
 
         <div class="row item">
-
+            {% for education in academic  %}
             <div class="twelve columns">
 
                 <h3>{{ education.college }}</h3>
@@ -62,10 +62,10 @@
                 </p>
 
             </div>
-
+            {% endfor %}
         </div>
 
     </div>
-    {% endfor %}
+
 
 </div> <!-- End Education -->

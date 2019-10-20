@@ -11,6 +11,7 @@ class IndexView(TemplateView):
         context = super(IndexView, self).get_context_data(**kwargs)
         context['academic'] = AcademicTraining.objects.all().order_by('-date')
         context['resume'] = EmploymentHistory.objects.all().order_by('-end_date')
-        context['form'] = ContactForm
         context['skills'] = SKILLS
+        context['form'] = ContactForm
+
         return context

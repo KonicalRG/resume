@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse_lazy
 
 
 class Contact(models.Model):
@@ -11,3 +12,6 @@ class Contact(models.Model):
 
         return self.name + self.email + self.suject
 
+    def get_absolute_url(self):
+
+        return reverse_lazy("index")

@@ -24,7 +24,7 @@
       <div class="eight columns">
 
          <!-- form -->
-         <form action="(% url 'contact' %)" method="POST" id="contactForm">
+         <form action="{% url 'form:contact' %}"   method="POST" id="contactForm">
             {% csrf_token %}
             <fieldset>
 

@@ -20,3 +20,5 @@ class AcademicTraining(models.Model):
 
     def __str__(self):
         return self.college + " " + self.title
+
+  
