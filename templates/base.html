@@ -2,34 +2,45 @@
 {% load static %}
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> {% block title %} Base {% endblock %} </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> {% block title %} Base {% endblock %} </title>
 
-    <!-- CSS
+  <!-- CSS
     ================================================== -->
-    <link rel="stylesheet" href="{% static 'css/default.css' %}">
-    <link rel="stylesheet" href="{% static 'css/layout.css' %}">
-    <link rel="stylesheet" href="{% static 'css/media-queries.css' %}">
-    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+  <link rel="stylesheet" href="{% static 'css/default.css' %}">
+  <link rel="stylesheet" href="{% static 'css/layout.css' %}">
+  <link rel="stylesheet" href="{% static 'css/media-queries.css' %}">
+  <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
 
-    <!-- Script
+  <!-- Script
   ================================================== -->
-    <script src="{% static 'js/modernizr.js' %}"></script>
+  <script src="{% static 'js/modernizr.js' %}"></script>
 
-    <!-- Favicons
+  <!-- Favicons
    ================================================== -->
-    <link rel="shortcut icon" href="{% static 'favicon.png' %}" type="image/x-icon">
+  <link rel="shortcut icon" href="{% static 'favicon.png' %}" type="image/x-icon">
 
 </head>
 
 <body>
-    {% include 'partials/_header.html' %}
-    {%  block body  %}
+  {% include 'partials/_header.html' %}
+  {%  block body  %}
 
-    {% endblock %}
-    {% include 'partials/_footer.html' %}
+  {% endblock %}
+  {% include 'partials/_footer.html' %}
+  <!-- Java Script
+   ================================================== -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+  <script type="text/javascript" src=""></script> {% static 'js/jquery-migrate-1.2.1.min.js' %}
+
+  <script src="{% static 'js/jquery.flexslider.js' %}"></script>
+  <script src="{% static 'js/waypoints.js' %}"></script>
+  <script src="{% static 'js/jquery.fittext.js' %}"></script>
+  <script src="{% static 'js/magnific-popup.js' %}"></script>
+  <script src="{% static 'js/init.js' %}"></script>
 </body>
 
 </html>
