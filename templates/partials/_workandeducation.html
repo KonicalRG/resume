@@ -6,30 +6,32 @@
         <h1><span>Historial Empleos</span></h1>
     </div>
 
-    {% for history in resume %}
+
 
     <div class="nine columns main-col">
 
         <div class="row item">
 
+            {% for history in resume %}
             <div class="twelve columns">
 
                 <h3>{{ history.title }}</h3>
                 <p class="info">{{ history.role }}<span>&bull;</span> <em class="date">{{ history.start_date }} -
-                        {{ history.end_date }}</em></p>
-
+                        {% if history.end_date %} {{ history.end_date }} {% else %} Actual{% endif %}
+                    </em></p>
                 <p>
                     {{ history.description }}
                 </p>
 
             </div>
+            {% endfor %}
 
         </div>
 
 
 
     </div>
-    {% endfor %}
+
 
 </div> <!-- End Work -->
 

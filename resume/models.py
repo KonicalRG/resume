@@ -5,7 +5,7 @@ class EmploymentHistory(models.Model):
     title = models.CharField(max_length=50)
     role = models.CharField(max_length=50)
     start_date = models.DateField()
-    end_date = models.DateField()
+    end_date = models.DateField(blank=True, null=True)
     description = models.TextField()
 
     def __str__(self):
@@ -20,4 +20,3 @@ class AcademicTraining(models.Model):
 
     def __str__(self):
         return self.college + " " + self.title
-
