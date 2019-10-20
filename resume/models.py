@@ -21,11 +21,3 @@ class AcademicTraining(models.Model):
     def __str__(self):
         return self.college + " " + self.title
 
-
-class Contact(models.Model):
-    github = models.URLField()
-    linkedin = models.URLField()
-    skype = models.CharField(max_length=50)
-
-    def __str__(self):
-        return self.github + ", " + self.linkedin + " , " + self.skype
