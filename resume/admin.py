@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import EmploymentHistory, AcademicTraining, Contact
+from .models import EmploymentHistory, AcademicTraining
 
 
 class EmploymentHistoryAdmin(admin.ModelAdmin):
@@ -19,4 +19,3 @@ class AcadamicTraniningAdmin(admin.ModelAdmin):
 
 admin.site.register(EmploymentHistory, EmploymentHistoryAdmin)
 admin.site.register(AcademicTraining, AcadamicTraniningAdmin)
-admin.site.register(Contact)
