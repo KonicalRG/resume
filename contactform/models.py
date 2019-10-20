@@ -1,5 +1,5 @@
 from django.db import models
-from django.urls import reverse_lazy
+from django.urls import reverse
 
 
 class Contact(models.Model):
@@ -14,4 +14,5 @@ class Contact(models.Model):
 
     def get_absolute_url(self):
 
-        return reverse_lazy("index")
+        # return reverse_lazy("index")
+        return reverse("index")
