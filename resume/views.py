@@ -1,5 +1,4 @@
 from django.views.generic import TemplateView
-from contactform.forms import ContactForm
 from resume.skills import SKILLS
 from .models import AcademicTraining, EmploymentHistory
 
@@ -12,6 +11,4 @@ class IndexView(TemplateView):
         context['academic'] = AcademicTraining.objects.all().order_by('-date')
         context['resume'] = EmploymentHistory.objects.all().order_by('-end_date')
         context['skills'] = SKILLS
-        context['form'] = ContactForm
-
         return context
