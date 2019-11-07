@@ -20,7 +20,9 @@
                         {% if history.end_date %} {{ history.end_date }} {% else %} Presente {% endif %}
                     </em></p>
                 <p>
-                    {{ history.description }}
+                    <span><h6>Descripción del puesto:</h6></span>{{ history.description }} <br>
+                    <span><h6>Rol principal:</h6></span>{{ history.main_role }} <br>
+                    <span><h6>Logros:</h6></span>{{ history.achievements }} <br>
                 </p>
 
             </div>

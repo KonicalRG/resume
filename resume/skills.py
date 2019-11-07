@@ -6,6 +6,5 @@ SKILLS = {
     'skill5': 'IoT',
     'skill6': 'PERSONAL OVERSIGHT',
     'skill7': 'PROJECT MANAGEMENT',
-    'skill8': 'PROBLEM SOlVER',
-    'skill9': 'FAST LEANER',
+
 }

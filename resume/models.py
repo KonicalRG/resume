@@ -7,6 +7,8 @@ class EmploymentHistory(models.Model):
     start_date = models.DateField()
     end_date = models.DateField(blank=True, null=True)
     description = models.TextField()
+    main_role = models.TextField(blank=True, null=True)
+    achievements = models.TextField(blank=True, null=True)
 
     def __str__(self):
         return self.title + " " + self.role
@@ -20,5 +22,3 @@ class AcademicTraining(models.Model):
 
     def __str__(self):
         return self.college + " " + self.title
-
-  
