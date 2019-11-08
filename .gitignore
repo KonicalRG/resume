@@ -7,3 +7,4 @@ migrations/
 *__pycache__/
 .pyc
 *.cpython-37
+source/__pycache__/settings.cpython-37.pyc
