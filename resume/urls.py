@@ -1,3 +1,5 @@
+# resume/urls.py
+
 from django.urls import path
 from .views import IndexView
 

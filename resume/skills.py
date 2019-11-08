@@ -1,10 +1,12 @@
+# Skill dictonary
+
+
 SKILLS = {
-    'skill1': 'CSS',
-    'skill2': 'HTML5',
-    'skill3': 'PYTHON/DJANGO',
-    'skill4': 'JAVASCRIPT',
-    'skill5': 'IoT',
-    'skill6': 'PERSONAL OVERSIGHT',
-    'skill7': 'PROJECT MANAGEMENT',
+    'skill1': 'Planificacion y ejecucion de projectos',
+    'skill2': 'Supervision Efectiva de Personal',
+    'skill3': 'Resolucion de Problemas',
+    'skill4': 'Apredizaje Rapido',
+    'skill5': 'Industrial Intenet of Things (2IoT)',
+    'skill6': 'Web Development (Django, JavaScript, HTML5, CSS)',
 
 }

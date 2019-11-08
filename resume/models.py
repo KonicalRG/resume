@@ -2,6 +2,9 @@ from django.db import models
 
 
 class EmploymentHistory(models.Model):
+    '''
+    Model class for Employment History
+    '''
     title = models.CharField(max_length=50)
     role = models.CharField(max_length=50)
     start_date = models.DateField()
@@ -15,6 +18,9 @@ class EmploymentHistory(models.Model):
 
 
 class AcademicTraining(models.Model):
+    '''
+    Model class for Academy Training
+    '''
     college = models.CharField(max_length=50)
     title = models.CharField(max_length=50)
     description = models.TextField()

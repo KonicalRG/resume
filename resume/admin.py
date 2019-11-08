@@ -17,5 +17,6 @@ class AcadamicTraniningAdmin(admin.ModelAdmin):
     search_fields = ('title', 'college', 'date')
     ordering = ('title', 'college', 'date')
 
+
 admin.site.register(EmploymentHistory, EmploymentHistoryAdmin)
 admin.site.register(AcademicTraining, AcadamicTraniningAdmin)
