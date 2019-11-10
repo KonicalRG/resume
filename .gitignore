@@ -3,7 +3,6 @@ db.sqlite3
 static/
 ceevee/
 media/
-migrations/
 *__pycache__/
 .pyc
 *source/__pycache__/settings.cpython-37.pyc
