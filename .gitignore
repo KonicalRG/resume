@@ -5,3 +5,4 @@ ceevee/
 media/
 *__pycache__/
 .pyc
+dump.json
