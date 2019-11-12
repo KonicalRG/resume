@@ -1,5 +1,5 @@
 .vscode/
-db.sqlite3
+Procfile 
 static/
 ceevee/
 media/
