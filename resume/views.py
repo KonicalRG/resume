@@ -11,6 +11,6 @@ class IndexView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super(IndexView, self).get_context_data(**kwargs)
         context['academic'] = AcademicTraining.objects.all().order_by('college')
-        context['resume'] = EmploymentHistory.objects.all().order_by('start_date')
+        context['resume'] = EmploymentHistory.objects.all().order_by('-start_date')
         context['skills'] = SKILLS
         return context
